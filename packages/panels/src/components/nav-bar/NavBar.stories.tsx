@@ -53,6 +53,7 @@ import { faCog } from "@fortawesome/free-solid-svg-icons/faCog";
 import { faSignOutAlt } from "@fortawesome/free-solid-svg-icons/faSignOutAlt";
 import { NavBarNotificationButton } from "./NavBarNotificationButton";
 import { useEffect, useState } from "react";
+import { NavBarSearchField } from "./NavBarSearchField";
 
 export default {
   title: "panels/NavBar",
@@ -208,6 +209,14 @@ export const WithButtonIcons = () => (
 
 export const CenterContent = () => (
   <NavBar center={<TextInput />}>
+    <NavBarButton label={"Customers"} selected />
+    <NavBarButton label={"Bookings"} />
+    <NavBarButton label={"Events"} />
+  </NavBar>
+);
+
+export const Search = () => (
+  <NavBar center={<NavBarSearchField />}>
     <NavBarButton label={"Customers"} selected />
     <NavBarButton label={"Bookings"} />
     <NavBarButton label={"Events"} />
