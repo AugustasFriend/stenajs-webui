@@ -215,13 +215,7 @@ export const CenterContent = () => (
   </NavBar>
 );
 
-export const Search = () => (
-  <NavBar center={<NavBarSearchField />}>
-    <NavBarButton label={"Customers"} selected />
-    <NavBarButton label={"Bookings"} />
-    <NavBarButton label={"Events"} />
-  </NavBar>
-);
+export const Search = () => <NavBar center={<NavBarSearchField />}></NavBar>;
 
 export const PopoverButton = () => (
   <NavBar
